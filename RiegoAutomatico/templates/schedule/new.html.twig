@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block title %}Solicitar nuevo horario{% endblock %}
+
+{% block body %}
+    <h1>Solicitar horario</h1>
+    
+     {{ include('schedule/_form.html.twig') }} 
+
+    
+    
+
+    <button id="guardar">{{ button_label|default('Enviar') }}</button>
+{{ form_end(form) }}
+    <button id="salir" onclick="window.location.href='{{ path('main') }}'">Cancelar</button>
+
+
+{% endblock %}
