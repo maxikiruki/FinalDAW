@@ -93,7 +93,7 @@ class MainController extends AbstractController
             //Enviar correo
             $message = (new \Swift_Message('Nueva Consulta'))
             ->setFrom('facilriego@gmail.com')
-            ->setTo("jaimenavarrol97@gmail.com")
+            ->setTo("******@gmail.com")
             ->setBody("Nombre: ".$nombre." Correo: ".$correo." Telefono: ".$telefono." Mensaje: ".$mensaje);
 
             $mailer->send($message);
