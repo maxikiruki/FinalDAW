@@ -57,7 +57,7 @@ class ScheduleController extends AbstractController
                 //Enviar correo
                 $message = (new \Swift_Message('Nueva Solicitud de Horario'))
                 ->setFrom($micorreo)
-                ->setTo("jaimenavarrol97@gmail.com")
+                ->setTo("******@gmail.com")
                 ->setBody("Hay una neuva solicitud de horario");
     
                 $mailer->send($message);
